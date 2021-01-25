@@ -1,0 +1,101 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(fonts/GothamMedium.ttf);
+    }
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*resetpara REMS  62.5% = 10px de 16px*/
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.flex, .flex-column {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+}
+button {
+    cursor: pointer;
+    width: 65px;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 7px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+header {
+    background-image: url('https://imgmedia.elpopular.pe/640x345/elpopular/original/2020/11/14/5fb085d1a2d77c38ce53dde4.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+header .container {
+    height: 100vh;
+    justify-content: space-around;
+}
+.header-texto {
+    color: #fff;
+}
+h1 {
+    font-family: GothamMedium, serif;
+    font-size: 6rem;
+}
+header .container p {
+    font-family: GothamMedium, serif;
+    font-size: 2rem;
+}
+
+.descripción {
+    padding-top: 2.5rem;
+    font-size: 1.7rem;
+}
+.descripción p {
+    margin-bottom: 1rem;
+}
+
+.apps-site {
+    margin-bottom: 10rem;
+}
+.apps-site-row {
+    display: flex;
+    justify-content: space-around;
+    width: 88rem;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.app {
+    width: 15rem;
+    background: rgb(32, 30, 30);
+    height: 18rem;
+    justify-content: space-around;
+    padding: 15px 0 10px 0;
+}
+
+img {
+    border-radius: 22.5rem;
+    width: 10rem;
+}
