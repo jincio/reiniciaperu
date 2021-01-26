@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            Reinicia Perú
+        </title>
+        
+        <meta name="description" content="En un esfuerzo científico sin precedentes, más de 60 laboratorios realizaron ensayos clínicos en 2020 para lograr la vacuna contra la COVID-19. Algunos ya alcanzaron la meta.">
+        <meta name="author" content="Alejandro Mayurí">
+        <meta name="keywords" content="coronavirus, Covid-19, vacunas, laboratorios, ciencia, pandemia, cura, virus">
+        <meta property="og:title" content="En tiempo récord: así fue la carrera para lograr las vacunas contra la COVID-19 | La Republica">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://especiales.larepublica.pe/carrera-de-las-vacunas/">
+        <meta property="og:image" content="https://especiales.larepublica.pe/carrera-de-las-vacunas/portada.png">
+        <meta property="og:site_name" content="La Republica">
+        <meta property="og:description" content="En un esfuerzo científico sin precedentes, más de 60 laboratorios realizaron ensayos clínicos en 2020 para lograr la vacuna contra la COVID-19. Algunos ya alcanzaron la meta. | La Republica">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@larepublica_pe">
+        <meta name="twitter:url" content="https://especiales.larepublica.pe/carrera-de-las-vacunas/">
+        <meta name="twitter:image" content="https://especiales.larepublica.pe/carrera-de-las-vacunas/portada.png">
+        <meta name="twitter:title" content="En tiempo récord: así fue la carrera para lograr las vacunas contra la COVID-19 | La Republica">
+        <meta name="twitter:description" content="En un esfuerzo científico sin precedentes, más de 60 laboratorios realizaron ensayos clínicos en 2020 para lograr la vacuna contra la COVID-19. Algunos ya alcanzaron la meta.">
+        <meta name="twitter:width" content="150">
+        <meta name="twitter:height" content="120">
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+    
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
+    
+    </head>
 <body>
     <header>
         <div class="container flex-column">
-            <div class="header-texto flex-column">
-                <h1><a href="#">(#)Reinicia Perú</a></h1>
-                <p>subtítulo</p>
+            <div class="auto header-text descript parallax-container">
+                <div class="parallax">
+                    <div class="header-texto flex-column">
+                        <h1><a href="#">(#)Reinicia Perú</a></h1>
+                        <p>Informamos sobre información</p>
+                    
+                        <div class="redes-header">
+                            <div class="right">
+                                <span>
+                                    <a id="id-btn-fb" class="btn-fb btn-Social" data-social="facebook" href="javascript:void(0)" id="id-btn-fb" rel="noopener"></a>
+                                    <a id="id-btn-twt" class="btn-twt btn-Social" data-social="twitter" href="javascript:void(0)" id="id-btn-twt" rel="noopener"></a>
+                                    <a id="id-btn-wsp" class="btn-wsp" href="https://api.whatsapp.com/send?text=Reinicia Perú: https://especiales.larepublica.pe/carrera-de-las-vacunas/" id="id-btn-wsp" rel="noopener" target="_blank"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -54,5 +96,74 @@
         </div>
     </main>
     <footer></footer>
+    
 </body>
+<script>
+
+var parallaxElements = $('.parallax'),
+    parallaxQuantity = parallaxElements.length;
+
+$(window).on('scroll', function () {
+
+  window.requestAnimationFrame(function () {
+
+    for (var i = 0; i < parallaxQuantity; i++) {
+      var currentElement =  parallaxElements.eq(i);
+      var scrolled = $(window).scrollTop();
+          
+        currentElement.css({
+          'transform': 'translate3d(0,' + scrolled * +0.26 + 'px, 0)'
+        });
+
+    }
+  });
+
+});
+
+
+
+
+
+    var btnSocial = document.querySelectorAll(".btn-Social");
+
+const rss = nameSocial => {
+  var link = null;
+  switch (nameSocial) {
+    case "facebook":
+      link = "https://www.facebook.com/sharer/sharer.php?u=";
+      break;
+    case "twitter":
+      link = "https://twitter.com/share?url=";
+      break;
+    default:
+      break;
+  }
+
+  var url = window.location.href;
+
+  var text = document.querySelector('meta[name="description"]').content;
+
+  document
+    .getElementsByClassName("btn-wsp")[0]
+    .setAttribute(
+      "href",
+      "https://api.whatsapp.com/send?text=" + text + " " + url
+    );
+
+  const popupText = nameSocial == "twitter" ? "&text=" + text : "";
+
+  window.open(
+    link + url + popupText,
+    nameSocial + "-popup",
+    "height=350,width=600"
+  );
+};
+
+Object.keys(btnSocial).map(item => {
+  btnSocial[item].onclick = function() {
+    var nameSocial = btnSocial[item].getAttribute("data-social");
+    rss(nameSocial);
+  };
+});
+</script>
 </html>

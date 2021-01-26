@@ -11,6 +11,8 @@ html {
 * {
     margin: 0;
     padding: 0;
+    z-index: 99;
+position: sticky;
 }
 .container {
     max-width: 102.4rem;
@@ -49,9 +51,10 @@ button {
 }
 
 header {
-    background-image: url('https://imgmedia.elpopular.pe/640x345/elpopular/original/2020/11/14/5fb085d1a2d77c38ce53dde4.jpg');
+    background-image: url('fondo.jpg');
     background-position: center center;
     background-size: cover;
+    filter: grayscale(25%);
 }
 header .container {
     height: 100vh;
@@ -60,14 +63,66 @@ header .container {
 .header-texto {
     color: #fff;
 }
+.header-texto p {
+    background: black;
+}
 h1 {
     font-family: GothamMedium, serif;
-    font-size: 6rem;
+    font-size: 7rem;
 }
 header .container p {
     font-family: GothamMedium, serif;
     font-size: 2rem;
 }
+.redes-header {
+    margin-top: 15px;
+}
+
+header span {
+    font-size: 0;
+}
+span a.btn-fb {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+span a.btn-twt {
+    background-position: 0 -43px;
+    background-repeat: no-repeat;
+}
+span a.btn-wsp {
+    background-position: 0 -86px;
+    background-repeat: no-repeat;
+}
+.right span a {
+    background-image: url(https://s3.amazonaws.com/glr-demo/2020/04/13/icons-white-1586816732.svg);
+}
+span [class*="btn-"] {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin-left: 10px;
+}
+
+.parallax-container {
+    position: relative;
+    margin-top: -200px;
+    z-index: -1;
+    width: 60rem;
+}
+.parallax-container p {
+    font-size: 21px;
+    line-height: 25px;
+}
+  
+.parallax {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
 
 .descripción {
     padding-top: 2.5rem;
@@ -96,6 +151,5 @@ header .container p {
 }
 
 img {
-    border-radius: 22.5rem;
     width: 10rem;
 }
