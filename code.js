@@ -15,11 +15,11 @@ $(window).ready(function () {
         $('.info-site-container').css('display','block')
     });
     $('.app-1').click(function () {
-        $(this).css('box-shadow','0px 0px 10px 5px #40ff3a')
-        $('.info-site-container').css('border-top','solid 2px #40ff3a')
+        $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
+        $('.info-site-container').css('border-top','solid 2px #ff4e4e')
         $('button').hover(
             function() {
-            $('button').css('border','solid 2px #40ff3a')
+            $('button').css('border','solid 2px #ff4e4e')
             },function() {
                 $('button').css('border','none')
             }
@@ -29,11 +29,11 @@ $(window).ready(function () {
         $('.info-site-bott a').attr('href',appUnoLink)
     });
     $('.app-2').click(function () {
-        $(this).css('box-shadow','0px 0px 10px 5px #3090ff')
-        $('.info-site-container').css('border-top','solid 2px #3090ff')
+        $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
+        $('.info-site-container').css('border-top','solid 2px #ff4e4e')
         $('button').hover(
             function() {
-            $('button').css('border','solid 2px #3090ff')
+            $('button').css('border','solid 2px #ff4e4e')
             },function() {
                 $('button').css('border','none')
             }
@@ -43,7 +43,7 @@ $(window).ready(function () {
         $('.info-site-bott a').attr('href',appDosLink)
     });
     $('.app-3').click(function () {
-        $(this).css('box-shadow','0px 0px 10px 5px #ff4e4e')
+        $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
         $('.info-site-container').css('border-top','solid 2px #ff4e4e')
         $('button').hover(
             function() {
@@ -57,11 +57,11 @@ $(window).ready(function () {
         $('.info-site-bott a').attr('href',appTresLink)
     });
     $('.app-4').click(function () {
-        $(this).css('box-shadow','0px 0px 10px 5px #ebff33')
-        $('.info-site-container').css('border-top','solid 2px #ebff33')
+        $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
+        $('.info-site-container').css('border-top','solid 2px #ff4e4e')
         $('button').hover(
             function() {
-            $('button').css('border','solid 2px #ebff33')
+            $('button').css('border','solid 2px #ff4e4e')
             },function() {
                 $('button').css('border','none')
             }
@@ -70,4 +70,6 @@ $(window).ready(function () {
         $('.info-site-top div').html('<h3>Ama Llulla</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget molestie justo. Sed lobortis dolor sed quam dignissim, sit amet pulvinar purus sodales. Morbi lacinia ex vitae odio lobortis, eget scelerisque lorem auctor.</p>')
         $('.info-site-bott a').attr('href',appCuatroLink)
     });
+
+    
 });

@@ -72,7 +72,15 @@
               <h2>Descripción</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget molestie justo. Sed lobortis dolor sed quam dignissim, sit amet pulvinar purus sodales. Morbi lacinia ex vitae odio lobortis, eget scelerisque lorem auctor. Integer vitae mattis quam. Suspendisse cursus augue tortor, eget suscipit lectus efficitur sed. Aliquam erat volutpat. Vestibulum at lorem vitae ligula facilisis porta. Cras imperdiet hendrerit odio, eu tincidunt elit vulputate non. Donec dictum convallis erat eget dictum. </p>
             </div>
-        <div class="container">
+            <section>
+              <p>Las elecciones son en</p>
+              <p>
+                  <span id="days"></span> días 
+              </p>
+              <p>infórmate</p>
+          </section>
+        <div class="container apps-container">
+            <h4 class="apps-titulo">Las siguientes aplicaciones son herramientas informativas</h4>
             <div class="apps-site flex-column">
                 <div class="apps-site-row flex">
                     <div class="app app-1 flex-column ">
@@ -93,7 +101,9 @@
                     </div>
                 </div>
             </div>
+            
         </div>
+        
             <div class="info-site-container">
                 <div class="info-site">
                   <div class="info-site-top">
@@ -109,6 +119,55 @@
     <footer></footer>
     
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => { 
+
+    //===
+    // VARIABLES
+    //===
+    const DATE_TARGET = new Date('04/11/2021');
+    // DOM for render
+    const SPAN_DAYS = document.querySelector('span#days');
+    const SPAN_HOURS = document.querySelector('span#hours');
+    const SPAN_MINUTES = document.querySelector('span#minutes');
+    const SPAN_SECONDS = document.querySelector('span#seconds');
+    // Milliseconds for the calculations
+    const MILLISECONDS_OF_A_SECOND = 1000;
+    const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+    const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+    const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+    //===
+    // FUNCTIONS
+    //===
+
+    /**
+    * Method that updates the countdown and the sample
+    */
+    function updateCountdown() {
+        // Calcs
+        const NOW = new Date()
+        const DURATION = DATE_TARGET - NOW;
+        const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+        // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+        // Render
+        SPAN_DAYS.textContent = REMAINING_DAYS;
+        $(window).ready(function () {
+          $('section').css('filter','grayscale('+REMAINING_DAYS+'%)')
+        });
+    }
+
+    //===
+    // INIT
+    //===
+    updateCountdown();
+    // Refresh every second
+    setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+});
+
+
+</script>
 <script>
 
 var parallaxElements = $('.parallax'),
