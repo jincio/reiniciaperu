@@ -32,15 +32,43 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-reinicio.css">
     
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-6536106-1"></script>
         <script src="code.js"></script>
+        <script src="code-reinicio.js"></script>
     
     </head>
 <body>
-    <header>
+    <div class="reinicio">
+      <div class="reinicio-img"></div>
+      <h2>Reiniciando Perú</h2>
+      <div id="container">
+        <div id="halfclip">
+            <div class="halfcircle" id="clipped">
+            </div>
+        </div>
+        <div class="halfcircle" id="fixed">
+        </div>
+    </div>
+
+      <div class="button-play">
+            
+        <div class="wave">
+            <div class="svg-box">
+                <i class="icon button-play" data-toggle="modal" data-target=".bd-example-modal-lg"></i>
+            </div>
+            <div class="circle delay1"></div>
+            <div class="circle"></div>
+            <div class="circle delay3"></div>
+            <div class="circle delay4"></div>
+        </div>
+    </div>
+    </div>
+    <div class="site">
+      <header>
         <div class="auto header-text descript parallax-container">
             <div class="parallax">
                 <div class="img-banner">
@@ -75,7 +103,7 @@
             <section>
               <p>Las elecciones son en</p>
               <p>
-                  <span id="days"></span> días 
+                  <span id="days"></span> días
               </p>
               <p>infórmate</p>
           </section>
@@ -111,12 +139,31 @@
                       <div></div>
                   </div>
                   <div class="info-site-bott">
-                      <a target="_blank" href=""><button>IR A LA APP</button></a>
+                      <a target="_blank" href=""><button class="app-button">IR A LA APP</button></a>
                  </div>
               </div>
             </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="empresas-aliadas">
+        <p>Gracias a nuestros aliados</p>
+        <div class="aliados">
+          <img src="https://www.transparencia.org.pe/themes/contrib/express/img/logo.jpg" alt="transparencia">
+          <img src="https://www.transparencia.org.pe/themes/contrib/express/img/logo.jpg" alt="transparencia">
+        </div>
+      </div>
+      <div class="creditos">
+        <p>Reinicia Perú . pe</p>
+        <p>Informamos sobre información</p>
+        <p>2021</p>
+        <p>Derechos reservados</p>
+        <p>José Incio</p>
+        <p>Alejo Mayurí</p>
+        <button>Reinicia Perú</button>
+      </div>
+    </footer>
+    </div>
+    
     
 </body>
 <script>

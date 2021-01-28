@@ -17,11 +17,11 @@ $(window).ready(function () {
     $('.app-1').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
         $('.info-site-container').css('border-top','solid 2px #ff4e4e')
-        $('button').hover(
+        $('button.app-button').hover(
             function() {
-            $('button').css('border','solid 2px #ff4e4e')
+            $('button.app-button').css('border','solid 2px #ff4e4e')
             },function() {
-                $('button').css('border','none')
+                $('button.app-button').css('border','none')
             }
         );
         $('.info-site-top img').attr('src',appUnoFoto)
@@ -31,11 +31,11 @@ $(window).ready(function () {
     $('.app-2').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
         $('.info-site-container').css('border-top','solid 2px #ff4e4e')
-        $('button').hover(
+        $('button.app-button').hover(
             function() {
-            $('button').css('border','solid 2px #ff4e4e')
+            $('button.app-button').css('border','solid 2px #ff4e4e')
             },function() {
-                $('button').css('border','none')
+                $('button.app-button').css('border','none')
             }
         );
         $('.info-site-top img').attr('src',appDosFoto)
@@ -45,11 +45,11 @@ $(window).ready(function () {
     $('.app-3').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
         $('.info-site-container').css('border-top','solid 2px #ff4e4e')
-        $('button').hover(
+        $('button.app-button').hover(
             function() {
-            $('button').css('border','solid 2px #ff4e4e')
+            $('button.app-button').css('border','solid 2px #ff4e4e')
             },function() {
-                $('button').css('border','none')
+                $('button.app-button').css('border','none')
             }
         )
         $('.info-site-top img').attr('src',appTresFoto)
@@ -59,11 +59,11 @@ $(window).ready(function () {
     $('.app-4').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
         $('.info-site-container').css('border-top','solid 2px #ff4e4e')
-        $('button').hover(
+        $('button.app-button').hover(
             function() {
-            $('button').css('border','solid 2px #ff4e4e')
+            $('button.app-button').css('border','solid 2px #ff4e4e')
             },function() {
-                $('button').css('border','none')
+                $('button.app-button').css('border','none')
             }
         )
         $('.info-site-top img').attr('src',appCuatroFoto)
@@ -71,5 +71,9 @@ $(window).ready(function () {
         $('.info-site-bott a').attr('href',appCuatroLink)
     });
 
-    
+    $('.creditos button').click(function () {
+        $('.site').css('display','none');
+        $('.reinicio').css('display','block');
+            setTimeout("window.location.reload(true);", 2000);
+    });
 });
