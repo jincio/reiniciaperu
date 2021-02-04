@@ -28,7 +28,7 @@ $(window).ready(function () {
     $('.app-2').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px rgb(13 155 255)')
         $('.info-site-container-1').css('border-top','solid 2px rgb(13 155 255)')
-        $('.info-site-top-1 img').attr('src','http://conoceatucandidato.org.pe/wp-content/uploads/2019/03/conoce-a-tu-candidato-header.png')
+        $('.info-site-top-1 img').attr('src','conoce-a-tu-candidato-header.png')
         $('.info-site-top-1 img').css('background-color','#000')
         $('.info-site-top-1 div').html('<h3>Conoce a tu candidato</h3><p>Elaborado por: Agárrate</p><p>Información sobre candidatos, noticias periodísticas, entrevistas.</p>')
         $('.info-site-bott-1 a').attr('href','https://conoceatucandidato.org.pe')
