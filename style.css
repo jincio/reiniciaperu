@@ -145,13 +145,13 @@ span [class*="btn-"] {
     color: #2b2b2b;
     font-family: GothamMedium, serif;
     font-size: 4rem;
-    width: 1024px;
+    max-width: 1024px;
     margin: 20px auto;
     margin-bottom: 20px;
 }
 .descripcion p {
     margin: 0 auto;
-    width: 102.4rem;
+    max-width: 102.4rem;
     color: #5e5e5e;
 }
 
@@ -160,7 +160,7 @@ span [class*="btn-"] {
 }
 .apps-titulo {
     color: #2b2b2b;
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     font-size: 2rem;
 }
@@ -182,22 +182,6 @@ span [class*="btn-"] {
     justify-content: space-around;
     padding: 15px 0 10px 0;
     cursor: pointer;
-}
-.app-1 {
-    border: solid 2px;
-    /*border-color: #40ff3a;*/
-}
-.app-2 {
-    border: solid 2px;
-   /* border-color: #3090ff;*/
-}
-.app-3 {
-    border: solid 2px;
-    /*border-color: #ff4e4e;*/
-}
-.app-4 {
-    border: solid 2px;
-    /*border-color: #ebff33;*/
 }
 
 section {
@@ -223,7 +207,7 @@ img {
 }
 .info-site {
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     padding: 20px;
 }
 .info-site-top-1, .info-site-top-2, .info-site-top-3, .info-site-top-4 {
@@ -297,3 +281,76 @@ footer p {
 .app-button-4:hover {
     border: solid 2px rgb(204 189 8);
 }
+
+.nombre-reinicio {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    font-size: 2rem;
+    margin-left: -147px;
+    margin-top: -104px;
+}
+.on-mobile {
+    display: none;
+}
+.off-mobile {
+    display: flex;
+}
+
+
+@media (max-width: 760px) {
+    header .container {
+        width: 400px;
+        padding-left: 118px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    header .container p {
+        font-size: 1.5rem;
+    }
+    .descripcion h2 {
+        padding-left: 1rem;
+    }
+    .descripcion p {
+        padding-left: 1rem;
+    }
+    .apps-site-row {
+        width: 39rem;
+        margin: 0;
+        margin-top: 3rem;
+    }
+    .app {
+        width: 12.3rem;
+    }
+    .apps-container {
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .on-mobile {
+        display: flex;
+    }
+    .off-mobile {
+        display: none;
+    }
+    .info-site-top-1 img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .info-site-top-2 img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .info-site-top-3 img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .info-site-top-4 img {
+        width: 10rem;
+        height: 10rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+  }
