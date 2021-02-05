@@ -284,3 +284,16 @@ footer p {
     width: 150px;
     margin-bottom: 50px;
 }
+
+.app-button-1:hover {
+    border: solid 2px rgb(13 155 255);
+}
+.app-button-2:hover {
+    border: solid 2px rgb(3 193 27);
+}
+.app-button-3:hover {
+    border: solid 2px #ff4e4e;
+}
+.app-button-4:hover {
+    border: solid 2px rgb(204 189 8);
+}
