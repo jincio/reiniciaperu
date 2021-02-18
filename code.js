@@ -165,6 +165,13 @@ $(window).ready(function () {
         $('.info-site-top-1 div').html('<h3>200</h3><p>Red de Soporte: Laboratoria, Hiperderecho, Transparencia, Utecventures, QuantumTalent</p><p>Proyecto cuya finalidad es apoyar en el desarrollo de tecnologías ciudadanas de cara a las Elecciones Generales de 2021</p><p>Iniciativas seleccionadas: Proyecto Tip, Vota con orgullo, Memoria en Acción, Open Política, Populistrómetro, Prometeo, F de Femenino, Habla Facil, Agenda Ambiental Maqray, Ahora ya lo sabes, Conectar para Actuar, Congreso Transparente.</p>')
         $('.info-site-bott-1 a').attr('href','https://www.200.pe')
     });
+    $('.app-21').click(function () {
+        $(this).css('box-shadow','0px 0px 5px 2px rgb(204 189 8)')
+        $('.info-site-container-1').css('border-top','solid 2px rgb(204 189 8)')
+        $('.info-site-top-1 img').attr('src','votu.jpg')
+        $('.info-site-top-1 div').html('<h3>Votu</h3><p>VOTU es la guia digital para elegir tu voto. Votu te ayuda a encontrar al candidato que realmente se alinea con lo que buscas de la manera mas fácil y objetiva.</p>')
+        $('.info-site-bott-1 a').attr('href','https://votu.pe/')
+    });
 
     $('.creditos button').click(function () {
         $('.site').css('display','none');

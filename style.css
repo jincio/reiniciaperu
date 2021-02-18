@@ -54,7 +54,7 @@ button {
 
 header {
     filter: grayscale(25%);
-    height: 100vh;
+    height: 87vh;
 }
 .img-banner {
     height: 100vh;
@@ -72,7 +72,7 @@ header {
     margin-left: -320px;
 }
 header .container {
-    height: 100vh;
+    height: 80vh;
     justify-content: space-around;
     width: 625px;
 }
@@ -298,6 +298,17 @@ footer p {
     display: flex;
 }
 
+@media (max-width: 1000px) {
+    .apps-container {
+        padding: 50px;
+    }
+    .apps-site-row {
+        width: 67rem;
+    }
+    .flex-column-3 .app {
+        margin: 0 5px;
+    }
+}
 
 @media (max-width: 760px) {
     header .container {
