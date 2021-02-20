@@ -54,7 +54,7 @@ button {
 
 header {
     filter: grayscale(25%);
-    height: 100vh;
+    height: 87vh;
 }
 .img-banner {
     height: 100vh;
@@ -72,7 +72,7 @@ header {
     margin-left: -320px;
 }
 header .container {
-    height: 100vh;
+    height: 85vh;
     justify-content: space-around;
     width: 625px;
 }
@@ -215,7 +215,7 @@ img {
 }
 .info-site-top-1 img, .info-site-top-2 img, .info-site-top-3 img, .info-site-top-4 img {
     width: 15rem;
-    height: 15rem;
+    height: 100%;
 }
 .info-site-top-1 p, .info-site-top-2 p, .info-site-top-3 p, .info-site-top-4 p {
     padding: 0px 0 15px 15px;
@@ -224,7 +224,7 @@ img {
 }
 
 footer {
-    height: 300px;
+    height: auto;
     background-color: #2b2b2b;
     margin-top: 60px;
     display: flex;
@@ -298,6 +298,17 @@ footer p {
     display: flex;
 }
 
+@media (max-width: 1000px) {
+    .apps-container {
+        padding: 50px;
+    }
+    .apps-site-row {
+        width: 67rem;
+    }
+    .flex-column-3 .app {
+        margin: 0 5px;
+    }
+}
 
 @media (max-width: 760px) {
     header .container {
