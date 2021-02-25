@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>
-            Reinicia Perú
+            Voto360
         </title>
         
         <meta name="description" content="En un esfuerzo científico sin precedentes, más de 60 laboratorios realizaron ensayos clínicos en 2020 para lograr la vacuna contra la COVID-19. Algunos ya alcanzaron la meta.">
@@ -79,15 +79,13 @@
         </div>
         <div class="container flex-column container-header">
                     <div class="header-texto flex-column">
-                        <h1><a href="#">(#)Reinicia Perú</a></h1>
+                        <h1></a>(#)Voto360</h1>
                         <p>Informamos sobre información</p>
                     
                         <div class="redes-header">
                             <div class="right">
                                 <span>
-                                    <a id="id-btn-fb" class="btn-fb btn-Social" data-social="facebook" href="javascript:void(0)" id="id-btn-fb" rel="noopener"></a>
-                                    <a id="id-btn-twt" class="btn-twt btn-Social" data-social="twitter" href="javascript:void(0)" id="id-btn-twt" rel="noopener"></a>
-                                    <a id="id-btn-wsp" class="btn-wsp" href="https://api.whatsapp.com/send?text=Reinicia Perú: https://especiales.larepublica.pe/carrera-de-las-vacunas/" id="id-btn-wsp" rel="noopener" target="_blank"></a>
+                                    <a target="_blank" id="id-btn-twt" class="btn-twt btn-Social" data-social="twitter" href="https://twitter.com/search?q=%23voto360&src=typed_query" id="id-btn-twt" rel="noopener"></a>
                                 </span>
                             </div>
                         </div>
@@ -98,8 +96,8 @@
 
       
             <div class="descripcion">
-              <h2>Descripción</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget molestie justo. Sed lobortis dolor sed quam dignissim, sit amet pulvinar purus sodales. Morbi lacinia ex vitae odio lobortis, eget scelerisque lorem auctor. Integer vitae mattis quam. Suspendisse cursus augue tortor, eget suscipit lectus efficitur sed. Aliquam erat volutpat. Vestibulum at lorem vitae ligula facilisis porta. Cras imperdiet hendrerit odio, eu tincidunt elit vulputate non. Donec dictum convallis erat eget dictum. </p>
+              <h2>¿Qué es Voto360</h2>
+                <p>Debido al alto número de candidatos y la enorme cantidad de información que el elector tiene que revisar, han surgido diferentes iniciativas desde la sociedad civil y organismos electorales con la finalidad facilitarle la tarea al elector de emitir un voto informado. Este portal funciona como un hub de aplicaciones que buscan solucionar este problema, brindando un espacio donde el elector pueda encontrar un escaparate de aplicaciones que le permita informarse y elegir bien.</p>
             </div>
             <section>
               <p>Las elecciones son en</p>
@@ -167,7 +165,7 @@
 
 
         <div class="container apps-container">
-            <h4 class="apps-titulo">Iniciativas de instituciones para un voto informado - Elecciones Generales 2021</h4>
+            <h4 class="apps-titulo">Aplicaciones/Webs con información sistematizada</h4>
             <div class="apps-site flex-column">
                 <div class="apps-site-row flex">
                     <div class="app app-row-1 app-1 flex-column">
@@ -216,7 +214,7 @@
 
 
           <div class="container apps-container">
-            <h4 class="apps-titulo">Iniciativas de instituciones para un voto informado - Elecciones Generales 2021</h4>
+            <h4 class="apps-titulo">Fact Checking/especiales informativos</h4>
             <div class="apps-site flex-column">
                 <div class="apps-site-row flex">
                     <div class="app app-row-2 app-5 flex-column ">
@@ -265,7 +263,7 @@
 
 
             <div class="container apps-container">
-              <h4 class="apps-titulo">Iniciativas de la sociedad civil en redes sociales - Elecciones Generales 2021</h4>
+              <h4 class="apps-titulo">Perfiles informativos en redes sociales</h4>
               <div class="apps-site flex-column flex-column-3">
                   <div class="apps-site-row flex">
                       <div class="app app-row-3 app-11 flex-column ">
@@ -360,7 +358,6 @@
       <div class="empresas-aliadas">
         <p>Portal curado por:</p>
         <div class="aliados">
-          <a target="_blank" href="https://transparencia.org.pe/"><img src="https://transparencia.org.pe/logotransparencia.png" alt="transparencia"></a>
           <a target="_blank" href="https://www.idea.int/es"><img src="https://www.idea.int/sites/all/themes/idea/images/logo.png" alt="IDEA"></a>
         </div>
       </div>
@@ -379,6 +376,8 @@
     
 </body>
 <script>
+
+  
   document.addEventListener('DOMContentLoaded', () => { 
 
     //===
@@ -425,10 +424,6 @@
     setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
 });
 
-
-</script>
-<script>
-
 var parallaxElements = $('.parallax'),
     parallaxQuantity = parallaxElements.length;
 
@@ -446,53 +441,7 @@ $(window).on('scroll', function () {
 
     }
   });
-
-});
-
-
-
-
-
-    var btnSocial = document.querySelectorAll(".btn-Social");
-
-const rss = nameSocial => {
-  var link = null;
-  switch (nameSocial) {
-    case "facebook":
-      link = "https://www.facebook.com/sharer/sharer.php?u=";
-      break;
-    case "twitter":
-      link = "https://twitter.com/share?url=";
-      break;
-    default:
-      break;
-  }
-
-  var url = window.location.href;
-
-  var text = document.querySelector('meta[name="description"]').content;
-
-  document
-    .getElementsByClassName("btn-wsp")[0]
-    .setAttribute(
-      "href",
-      "https://api.whatsapp.com/send?text=" + text + " " + url
-    );
-
-  const popupText = nameSocial == "twitter" ? "&text=" + text : "";
-
-  window.open(
-    link + url + popupText,
-    nameSocial + "-popup",
-    "height=350,width=600"
-  );
-};
-
-Object.keys(btnSocial).map(item => {
-  btnSocial[item].onclick = function() {
-    var nameSocial = btnSocial[item].getAttribute("data-social");
-    rss(nameSocial);
-  };
 });
 </script>
+
 </html>
