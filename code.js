@@ -160,10 +160,11 @@ $(window).ready(function () {
         $(this).css('box-shadow','0px 0px 5px 2px rgb(204 189 8)')
         $('.info-site-container-1').css('border-top','solid 2px rgb(204 189 8)')
 
-        $('.info-site-top-1 img').attr('src','https://uploads-ssl.webflow.com/5fbeb37ffcfa11c55d0d1ea2/5fc17600bd65e867587c52e4_200-logo-white-on-transparent.png')
-        $('.info-site-top-1 img').css('background-color','#000')
-        $('.info-site-top-1 div').html('<h3>200</h3><p>Red de Soporte: Laboratoria, Hiperderecho, Transparencia, Utecventures, QuantumTalent</p><p>Proyecto cuya finalidad es apoyar en el desarrollo de tecnologías ciudadanas de cara a las Elecciones Generales de 2021</p><p>Iniciativas seleccionadas: Proyecto Tip, Vota con orgullo, Memoria en Acción, Open Política, Populistrómetro, Prometeo, F de Femenino, Habla Facil, Agenda Ambiental Maqray, Ahora ya lo sabes, Conectar para Actuar, Congreso Transparente.</p>')
-        $('.info-site-bott-1 a').attr('href','https://www.200.pe')
+        $('.info-site-top-1 img').attr('src','https://transparencia.org.pe/static/media/logo-transparencia.ad4053d1.png')
+        $('.info-site-top-1 img').css('background-color','#124a87')
+        $('.info-site-top-1 img').css('padding','10px')
+        $('.info-site-top-1 div').html('<h3>Transparencia</h3><p>Transparencia es una asociación civil que trabaja por la calidad de la democracia y de la representación política plural en el Perú. Fundada el 18 de julio de 1994, carece de filiación partidaria y de fines lucrativos.</p>')
+        $('.info-site-bott-1 a').attr('href','https://transparencia.org.pe')
     });
     $('.app-21').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px rgb(204 189 8)')
