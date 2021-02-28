@@ -140,6 +140,7 @@ span [class*="btn-"] {
     font-size: 1.7rem;
     background-color: #fff;
     padding-bottom: 60px;
+    text-align: justify;
 }
 .descripcion h2 {
     color: #2b2b2b;
@@ -148,6 +149,7 @@ span [class*="btn-"] {
     max-width: 1024px;
     margin: 20px auto;
     margin-bottom: 20px;
+    text-align: center;
 }
 .descripcion p {
     margin: 0 auto;
