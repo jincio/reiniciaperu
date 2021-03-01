@@ -104,7 +104,7 @@ $(window).ready(function () {
         $('.info-site-container-3').css('border-top','solid 2px #ff4e4e')
         $('.info-site-top-3 img').attr('src','https://secureservercdn.net/192.169.221.188/0gh.f2b.myftpupload.com/wp-content/uploads/2020/05/cropped-69854099_2956173361066457_250982718953750528_n-1.png?time=1612337964')
         $('.info-site-top-3 div').html('<h3>@unapolitologa</h3><p>Hashtag: #Elecciones2021</p><p>Información sobre candidatos, el proceso electoral, entre otros.</p>')
-        $('.info-site-bott-3 a').attr('href','https://unapolitologa.com')
+        $('.info-site-bott-3 a').attr('href','https://www.instagram.com/unapolitologa/?igshid=ffq4xvdh0byr')
     });
     $('.app-13').click(function () {
         $(this).css('box-shadow','0px 0px 5px 2px #ff4e4e')
