@@ -51,6 +51,10 @@ button {
     font-family: 'Roboto';
 }
 
+button:hover {
+    border: solid 2px #ff1600;
+}
+
 header {
     filter: grayscale(25%);
     height: 70vh;
